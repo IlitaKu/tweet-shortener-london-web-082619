@@ -36,6 +36,7 @@ def word_substituter(tweet)
 
   words.collect do |word|
     dict.collect do |key, value|
+      binding.pry
       if word == key 
          word.replace(value)
         binding.pry
