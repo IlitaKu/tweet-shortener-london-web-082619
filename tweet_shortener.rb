@@ -38,7 +38,7 @@ def word_substituter(tweet)
     dict.each do |key, value|
       binding.pry
       if word == key.to_s 
-         word.replace(value)
+         word.gsub!(value)
          result << word
        else 
          result << word
