@@ -34,8 +34,8 @@ def word_substituter(tweet)
   dict = dictionary
   words = tweet.split(" ")
 
-  words.collect do |word|
-    dict.collect do |key, value|
+  words.each do |word|
+    dict.each do |key, value|
       binding.pry
       if word == key.to_s 
          word.replace(value)
