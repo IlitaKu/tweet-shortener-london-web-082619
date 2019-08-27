@@ -43,7 +43,7 @@ def word_substituter(tweet)
       end 
     end
   end 
-  words.join(" ")
+  result = words.join(" ")
 end 
 
 
