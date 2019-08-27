@@ -39,7 +39,7 @@ def word_substituter(tweet)
       binding.pry
       if word == key.to_s 
          word.replace(value)
-         result << word.join(" ")
+         result << word
        else 
          result << word
         binding.pry
